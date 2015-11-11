@@ -1,15 +1,11 @@
 'package com.pedro'
 
 '@RequestHandler("/user")'
-function UserHandler () {
+function UserHandler (Users) {
     
     '@Get("/all")'
     this.fetchAll = function() {
-        return [{
-            name : 'USER!'
-        }, {
-            anotherOne : 1234567
-        }];
+        return Users;
     };
     
     '@Get("/id/:id")'
