@@ -1,0 +1,32 @@
+{
+  "name": "js-oo-meetup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedroassis/JS-OO-Meetup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedroassis/JS-OO-Meetup/issues"
+  },
+  "homepage": "https://github.com/pedroassis/JS-OO-Meetup#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "nd-express-plugin": "0.0.9",
+    "node-dependency": "^2.0.3"
+  },
+  "node-dependency": {
+    "source": "app",
+    "express" : {
+      "port" : 3000,
+      "host" : "localhost"
+    }
+  }
+}
