@@ -1,20 +1,19 @@
 'package com.pedro'
 
 '@RequestHandler("/user")'
-function UserHandler (Users) {
+function UserHandler (q) {
+    
     
     '@Get("/all")'
     this.fetchAll = function() {
-        return Users;
+        var deferred = q.defer();
+        setTimeout(function () {
+            deferred.resolve({name : "pedro"});
+        }, 5000);
+        
+        return deferred.promise;
     };
     
-    '@Get("/id/:id")'
-    this.getByID = function($id) {
-        return {
-            userID : $id,
-            name : "aSDFGHJKL"
-        };
-    };
 
 }
 
